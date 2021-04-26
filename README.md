@@ -12,7 +12,7 @@ go mod why 解释为什么需要包和模块
 go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 ```
 # puppet service token 类型说明
-## [toke puppet 协议类型说明](https://wechaty.js.org/docs/explainations/glossary)
+## [token puppet 协议类型说明](https://wechaty.js.org/docs/explainations/glossary)
 | Name                                                         | Platform | Protocol | Life Cycle |
 | ------------------------------------------------------------ | -------- | -------- | ---------- |
 | [WXWork](https://wechaty.js.org/docs/puppet-services/wxwork) | WeCom    | Windows  | Beta       |
