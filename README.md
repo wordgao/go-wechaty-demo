@@ -2,13 +2,21 @@
 go-wechaty go wechaty
 
 //go mod download下载模块到本地缓存，缓存路径是$GOPATH/pkg/mod/cache
+
 //go mod edit是提供了命令版编辑go.mod的功能，例如go mod edit -fmt go.mod会格式化go.mod
+
 //go mod graph把模块之间的依赖图显示出来
+
 //go mod init初始化模块（例如把原本dep管理的依赖关系转换过来）
+
 //go mod tidy增加缺失的包，移除没用的包
+
 //go mod vendor把依赖拷贝到vendor/目录下
+
 //go mod verify确认依赖关系
+
 //go mod why解释为什么需要包和模块
+
 // go get -u -v github.com/xxx/xxx 手动显示下载指定的包
 
 	// 根据token类型自动区分pupet协议
