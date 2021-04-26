@@ -33,7 +33,7 @@ puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
 
 ```go
 
-// 根据token类型自动区分pupet协议
+// 根据token类型自动区分puppet协议
 token := "puppet_paimon_3903662148cf1ac4243667487a8778xx" //Ipad
 
 // 初始化wechaty
