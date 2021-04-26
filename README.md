@@ -37,13 +37,11 @@ puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
 token := "puppet_paimon_3903662148cf1ac4243667487a8778xx" //Ipad
 
 // 初始化wechaty
+// Endpoint  & Token 2选一
+// Endpoint：指定服务器
+// Token：根据token返回结果获取对应的puppet对应的协议
 bot := wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
 Token: token,
-// endpoint  & token 2选一
-
-// Endpoint 指定服务器
-// Token 根据token返回结果获取对应的pupet对应的服务
-
 //Endpoint: "127.0.0.1:30001",
 //Token: "3d415ebb-7a6f-4cba-b602-1f4ae400f011",
 
