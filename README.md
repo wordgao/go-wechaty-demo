@@ -53,7 +53,7 @@ Timeout: time.Duration(2 * time.Minute),
 # 事件监听
 
 ```go
-// 根据监听的内容进一步出处理对应的信息
+// 根据监听事件做进一步处理。
 
 //扫码监听
 bot.OnScan(onQrCode)
