@@ -24,19 +24,19 @@ go-wechaty go wechaty
 	//token:="puppet_wxwork_afc82579e88f81xx" // 企业
 	//token:="puppet_donut_ddaf151fbe8286xx" // web
   
-  // 初始化wechaty
-	bot := wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
-		Token: token,
-		// endpoint  & token 2选一
+// 初始化wechaty
+bot := wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
+	Token: token,
+	// endpoint  & token 2选一
 
-		// Endpoint 指定服务器
-		// Token 根据token返回结果获取对应的pupet对应的服务
+	// Endpoint 指定服务器
+	// Token 根据token返回结果获取对应的pupet对应的服务
 
-		//Endpoint: "127.0.0.1:30001",
-		//Token: "3d415ebb-7a6f-4cba-b602-1f4ae400f011",
+	//Endpoint: "127.0.0.1:30001",
+	//Token: "3d415ebb-7a6f-4cba-b602-1f4ae400f011",
 
-		// 超时控制
-		Timeout: time.Duration(2 * time.Minute),
-	}), wechaty.WithName("demo"))
+	// 超时控制
+	Timeout: time.Duration(2 * time.Minute),
+}), wechaty.WithName("demo"))
   
   
