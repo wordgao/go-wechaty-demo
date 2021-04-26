@@ -14,6 +14,12 @@ go get -u -v github.com/xxx/xxx 手动显示下载指定的包
 ```
 # pupetservice token 类型说明
 ## toke 类型连接说明 https://wechaty.js.org/docs/explainations/glossary
+| Name                                                         | Platform | Protocol | Life Cycle |
+| ------------------------------------------------------------ | -------- | -------- | ---------- |
+| [WXWork](https://wechaty.js.org/docs/puppet-services/wxwork) | WeCom    | Windows  | Beta       |
+| [Paimon](https://wechaty.js.org/docs/puppet-services/paimon) | WeChat   | Pad      | Beta       |
+| [PadLocal](https://wechaty.js.org/docs/puppet-services/padlocal) | WeChat   | Pad      | Beta       |
+| [Donut](https://wechaty.js.org/docs/puppet-services/donut)   | WeChat   | Windows  | Deprecated |
 ```
 puppet_wxwork_7ce4cf8a1ab789166c39c6: WXWork TOKEN
 puppet_padlocal_7ce48a1ab789166c39c6: PadLocal TOKEN
