@@ -1,5 +1,4 @@
 # go-wechaty-demo
-# go-wechaty  base core setting init
 
 ```
 go mod download下载模块到本地缓存，缓存路径是$GOPATH/pkg/mod/cache
@@ -28,7 +27,8 @@ puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
 56945fa4-7ce8-4cf8-a1a9-b789166c39c6: UUIDv4 TOKEN
 
 ```
-# Base setting init
+# go-wechaty  base core setting init
+## Base setting init
 
 ```go
 
