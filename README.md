@@ -19,6 +19,7 @@ go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 | [Paimon](https://wechaty.js.org/docs/puppet-services/paimon) | WeChat   | Pad      | Beta       |
 | [PadLocal](https://wechaty.js.org/docs/puppet-services/padlocal) | WeChat   | Pad      | Beta       |
 | [Donut](https://wechaty.js.org/docs/puppet-services/donut)   | WeChat   | Windows  | Deprecated |
+## token类型不同自动加载对应的Pupet Protocol Service。
 ```
 puppet_wxwork_7ce4cf8a1ab789166c39c6: WXWork TOKEN
 puppet_padlocal_7ce48a1ab789166c39c6: PadLocal TOKEN
