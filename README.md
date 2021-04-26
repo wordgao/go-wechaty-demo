@@ -18,7 +18,7 @@ go-wechaty go wechaty
 //go mod why解释为什么需要包和模块
 
 // go get -u -v github.com/xxx/xxx 手动显示下载指定的包
-
+# Base Setting Init
 	// 根据token类型自动区分pupet协议
 	token := "puppet_paimon_3903662148cf1ac4243667487a8778xx" //Ipad
 	//token:="puppet_wxwork_afc82579e88f81xx" // 企业
