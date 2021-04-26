@@ -12,7 +12,7 @@ go mod verify确认依赖关系
 go mod why解释为什么需要包和模块
 go get -u -v github.com/xxx/xxx 手动显示下载指定的包
 ```
-# token type pupetservice
+# pupetservice token 类型说明
 ## toke 类型连接说明 https://wechaty.js.org/docs/explainations/glossary
 ```
 puppet_wxwork_7ce4cf8a1ab789166c39c6: WXWork TOKEN
@@ -28,8 +28,6 @@ puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
 
 // 根据token类型自动区分pupet协议
 token := "puppet_paimon_3903662148cf1ac4243667487a8778xx" //Ipad
-//token:="puppet_wxwork_afc82579e88f81xx" // 企业
-//token:="puppet_donut_ddaf151fbe8286xx" // web
 
 // 初始化wechaty
 bot := wechaty.NewWechaty(wechaty.WithPuppetOption(wp.Option{
