@@ -25,7 +25,6 @@ puppet_padlocal_7ce48a1ab789166c39c6: PadLocal TOKEN
 puppet_paimon_7ce4cf8a1ab789166c39c6: Paimon TOKEN
 puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
 56945fa4-7ce8-4cf8-a1a9-b789166c39c6: UUIDv4 TOKEN
-
 ```
 # go-wechaty  base core setting init
 ## Base setting init
