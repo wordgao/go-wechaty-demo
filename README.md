@@ -1,5 +1,5 @@
 # go-wechaty-demo
-
+# go 环境与依赖常用命令
 ```
 go mod download下载模块到本地缓存，缓存路径是$GOPATH/pkg/mod/cache
 go mod edit是提供了命令版编辑go.mod的功能，例如go mod edit -fmt go.mod会格式化go.mod
@@ -9,7 +9,7 @@ go mod tidy增加缺失的包，移除没用的包
 go mod vendor把依赖拷贝到vendor/目录下
 go mod verify确认依赖关系
 go mod why解释为什么需要包和模块
-go get -u -v github.com/xxx/xxx 手动显示下载指定的包
+go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 ```
 # pupetservice token 类型说明
 ## toke 类型连接说明 https://wechaty.js.org/docs/explainations/glossary
