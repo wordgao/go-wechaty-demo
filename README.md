@@ -20,7 +20,7 @@ go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 | [PadLocal](https://wechaty.js.org/docs/puppet-services/padlocal) | WeChat   | Pad      | Beta       |
 | [Donut](https://wechaty.js.org/docs/puppet-services/donut)   | WeChat   | Windows  | Deprecated |
 ## 程序加载不同token类型来加载对应的Puppet Protocol Service。
-### token几种类型
+### token类型
 ```
 puppet_wxwork_7ce4cf8a1ab789166c39c6: WXWork TOKEN
 puppet_padlocal_7ce48a1ab789166c39c6: PadLocal TOKEN
