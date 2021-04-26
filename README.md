@@ -12,7 +12,16 @@ go mod verify确认依赖关系
 go mod why解释为什么需要包和模块
 go get -u -v github.com/xxx/xxx 手动显示下载指定的包
 ```
+# token type pupetservice
+## toke 类型连接说明 https://wechaty.js.org/docs/explainations/glossary
+```
+puppet_wxwork_7ce4cf8a1ab789166c39c6: WXWork TOKEN
+puppet_padlocal_7ce48a1ab789166c39c6: PadLocal TOKEN
+puppet_paimon_7ce4cf8a1ab789166c39c6: Paimon TOKEN
+puppet_donut_e7ce4cf8a1ab789166c39c6: Donut TOKEN
+56945fa4-7ce8-4cf8-a1a9-b789166c39c6: UUIDv4 TOKEN
 
+```
 # Base setting init
 
 ```go
@@ -147,4 +156,5 @@ main.main()
 
 Process finished with the exit code 2
 ```
+
 
