@@ -13,11 +13,11 @@ go mod verify 确认依赖关系
 go mod why 解释为什么需要包和模块
 go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 ```
-TOKEN 申请连接地址:
-```
+### TOKEN 申请连接地址:
+
 [个人TOKEN申购地址](http://175.27.139.176)
 [企业TOKEN申购地址](https://qiwei.juzibot.com)
-```
+
 |token type url register|url|
 | ------------- | -------- |
 |puppet_donut|[token申请地址](https://qiwei.juzibot.com)|
