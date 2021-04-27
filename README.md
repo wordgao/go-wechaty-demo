@@ -1,4 +1,6 @@
 # go-wechaty-demo
+[![Wechaty Contributor Program](https://img.shields.io/badge/Wechaty-Contributor%20Program-green.svg)](https://wechaty.js.org/docs/contributing/)
+[![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://wechaty.js.org)
 # go 环境与依赖常用命令
 ```
 go mod download 下载模块到本地缓存，缓存路径是$GOPATH/pkg/mod/cache
