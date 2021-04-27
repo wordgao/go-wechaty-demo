@@ -16,12 +16,12 @@ go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 ### TOKEN 申请地址
 
 [个人TOKEN申购地址](http://175.27.139.176)
-[企业TOKEN申购地址](https://qiwei.juzibot.com)
+[企业TOKEN申购地址](https://qiwei.juzibot.com/corpPremium/wechaty)
 
 |token type url register|url|
 | ------------- | -------- |
-|puppet_donut|[token申请地址](https://qiwei.juzibot.com)|
-|puppet_wxwork|[token申请地址](https://qiwei.juzibot.com)|
+|puppet_donut|[token申请地址](https://qiwei.juzibot.com/corpPremium/wechaty)|
+|puppet_wxwork|[token申请地址](https://qiwei.juzibot.com/corpPremium/wechaty)|
 |puppet_paimon|[token申请地址](http://175.27.139.176)|
 
 # puppet service token 类型说明
