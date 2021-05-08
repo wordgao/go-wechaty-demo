@@ -15,9 +15,9 @@ go get -u -v github.com/wechaty/go-wechaty 手动显示下载挂载指定的包
 ```
 ### TOKEN 申请地址
 
-[个人TOKEN申购地址](http://175.27.139.176)
+[paimon TOKEN申购地址](http://175.27.139.176)
 
-[企业TOKEN申购地址](https://qiwei.juzibot.com/corpPremium/wechaty)
+[WXWork TOKEN申购地址](https://qiwei.juzibot.com/corpPremium/wechaty)
 
 [PadLocal TOKEN申购地址](http://pad-local.com)
 
