@@ -86,14 +86,15 @@ panic(err)
 // 创建os通道监听
 var quitSing = make(chan os.Signal)
 
-// 系统信道监听 转发 到quitSing->
+// 系统信道监听 转发 到quitSing<-
 //os.Interrupt 表示中断
 //os.Kill 杀死退出进程
 signal.Notify(quitSing, os.Interrupt, os.Kill)
 
+//循环检测是否收到程序中断/退出的信号，如果有则自动退出程序。
 select {
 //<-quitSing 读
-//quitSing-< 写
+//quitSing<- 写
 case <-quitSing:
 log.Fatal("退出成功！")
 }
