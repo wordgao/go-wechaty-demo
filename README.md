@@ -87,6 +87,8 @@ panic(err)
 var quitSing = make(chan os.Signal)
 
 // 系统信道监听 转发 到quitSing->
+//os.Interrupt 表示中断
+//os.Kill 杀死退出进程
 signal.Notify(quitSing, os.Interrupt, os.Kill)
 
 select {
