@@ -170,8 +170,69 @@ panic: PuppetService Start() rejection: no endpoint
 goroutine 1 [running]:
 main.main()
 	D:/GoProjects/src/go-wechaty-demo/main.go:61 +0x2b7
-
 Process finished with the exit code 2
 ```
+# 常见问题
+### 由于0.412，以及wechaty1.2版本TLS不兼容，0.412实际上还是处于关闭状态，因此必须设置为关闭状态
+```
 
+- WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER=true
+- WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_CLIENT=true
+
+```
+### go-wechaty 0.411开始启用token前缀insecure_token
+#### 出现如下错误，解决办法保证go-wechaty中的token和傀儡服务器中的自定义token保持一致即可，前提是都包含前缀insecure_
+#### token错误提示如下。
+```
+#### 第 1 种类似错误提示
+ERRO[2024-08-01 16:07:22.671] w.initPuppet err: wechaty Puppet Service requires a SNI as prefix of the token.
+You can add the "insecure_" prefix to your token
+like: "insecure_ce8f6c05-9c6b-41c3-8a0b-1684d8ce51ff
+and try again module=wechaty
+
+
+#### 第 2 种类似错误提示
+ERRO[2024-08-01 16:09:53.681] puppet start err: PuppetService Start() rejection: startGrpcStream err:rpc error: code = Unavailable desc = name resolver error: token insecure_ece8f6c05-9c6b-41c3-8a0b-1684d8ce51ff does not exist module=wechaty
+
+
+```
+# docker-compose一次性过，需要修改的主要参数后面标记有星号*
+```
+services:
+  wechatPuppet.:
+    image: wechaty/wechaty:1.20
+    container_name: wechatPuppet
+    restart: always
+    network_mode: host
+    tty: true
+    ports:
+      - "1234:1234" # 对外暴露端口，自定义设置*
+    volumes:
+      - "$PWD:/home/nisa/wechaty"
+      - /etc/localtime:/etc/localtime:ro #时间同步
+      - /etc/timezone:/etc/timezone:ro  #时间同步
+    environment:
+      - SET_CONTAINER_TIMEZONE=true #时区
+      - CONTAINER_TIMEZONE=Asia/Shanghai #时区
+      - /etc/timezone:/etc/timezone #时区
+      - /etc/localtime:/etc/localtime #时区
+      - TAKE_FILE_OWNERSHIP=true #权限
+      - I18N_LOCALE=zh-CN #字符集
+      - LC_ALL=zh_CN.UTF-8 #字符集
+      - WECHATY_PUPPET_PADLOCAL_TOKEN=puppet_padlocal_ef42cca12a8f41beb78f32ebe1ea94da # 授权上游TOKEN *
+      - WECHATY_PUPPET_SERVER_PORT=1234 # 自定义 傀儡服务端口 *
+      - WECHATY_PUPPET=wechaty-puppet-padlocal # 协议 *
+      - WECHATY_LOG=verbose
+      - WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_SERVER=true #关闭服务端tls *
+      - WECHATY_PUPPET_SERVICE_NO_TLS_INSECURE_CLIENT=true #关闭客户端tls *
+      - WECHATY_TOKEN=insecure_63facbf5-3d6f-489e-9f7c-fe8dff7e5e55 # 自定义token，包括前缀 *
+#       5.设置微信日志
+#        启用verbose日志消息输出以便于调试。#
+#        更多选项是：#
+#        silly: 将输出所有调试消息
+#        verbose: 推荐的调试级别
+#        info: 禁用调试信息
+#        warning: 只有警告信息
+#        silence: 没有日志消息
+```
 
